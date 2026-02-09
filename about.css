@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://i.pinimg.com/736x/18/20/09/182009ccb327d794f46efc8b2a805523.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 60px 20px 0;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.about-text p {
+    color: aliceblue;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-text ul {
+    color: aliceblue;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+}
+
+.about-footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(245, 245, 245, 0.3);
+}
+
+.about-footer p {
+    color: #f5f5f5;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.heart {
+    color: #ff6b6b;
+    font-size: 1.2rem;
+}
+
+
