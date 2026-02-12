@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HomePage</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    
+    <div class="navbar">
+        <button onclick="document.getElementById('menu').hidden ^= 1">☰</button>
+        <ul id="menu" hidden>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <footer class="about-footer">
+            <p>Created with <span class="heart">♥</span> by Midhun Manesh</p>
+        </footer>
 </body>
 </html>

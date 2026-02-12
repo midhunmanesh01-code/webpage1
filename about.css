@@ -6,12 +6,10 @@
 
 body {
     background: url("https://i.pinimg.com/736x/18/20/09/182009ccb327d794f46efc8b2a805523.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/736x/18/20/09/182009ccb327d794f46efc8b2a805523.jpg");
     background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background-position: center;
+    height: 100vh;
 }
 
 .about-container {
@@ -86,4 +84,44 @@ h2 {
     font-size: 1.2rem;
 }
 
+button:hover 
+{
+  background-color: #130629;
+}
 
+#menu 
+{
+  list-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+
+#menu li 
+{
+  padding: 8px;
+}
+
+#menu a 
+{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#menu a:hover 
+{
+  text-decoration: underline;
+  color: #e5e4e7;
+}
+button {
+  background: #080808;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
