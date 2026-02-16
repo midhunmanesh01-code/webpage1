@@ -45,7 +45,17 @@ button:hover
   text-decoration: underline;
   color: #e5e4e7;
 }
-
+.navbar{
+  position: absolute;
+  top: 20px;
+  align-items: center;
+  gap: 12px;
+}
+.navbar button{
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
 .login {
   border: 1px solid white;
   width: 400px;
