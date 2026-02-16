@@ -113,6 +113,8 @@ button {
 .qr-code h2, .password-generator h3{
   margin: 0 0 8px 0;
   color: #fff;
+  font-size: 28px;
+  text-decoration: underline;
 }
 
 .qr-code p, .password-generator p{
@@ -126,3 +128,7 @@ button {
   font-size: 16px;
 }
 
+.qr-code button:hover, .password-generator button:hover{
+  background-color: #1d053d;
+  color: #f0ecec;
+}
