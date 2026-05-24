@@ -1,101 +1,88 @@
-# 🌐 Multi-Page Web Project (Login + Generators)
+# Web1 — Multi‑Page Front‑End Demo
 
-This is a beginner-level multi-page website built using **HTML and CSS**.  
-The project demonstrates core front-end development fundamentals including page navigation, structured layout design, and UI consistency.
+A small, static multi-page website demonstrating basic front-end patterns: navigation, layout, and simple JavaScript utilities (QR code and password generators).
 
-## 🔗 Live Demo
-👉 https://midhunmanesh01-code.github.io/webpage1/
+**Live demo:** https://midhunmanesh01-code.github.io/webpage1/
 
----
-
-## 📌 Project Overview
-
-This website contains multiple interconnected pages:
-
-- 🔐 **Login Page**
-  - Username and password form
-  - Navigation to other sections
-
-- 🏠 **Home Page**
-  - Central navigation hub
-  - Links to:
-    - QR Code Generator
-    - Password Generator
-
-- 📱 **QR Code Generator Page**
-  - Input field for text/URL
-  - Generate QR button (UI implemented)
-
-- 🔑 **Password Generator Page**
-  - Button to generate a secure random password (UI implemented)
-
-- 📞 **Contact Page**
-  - Email and phone information
-  - Short personal introduction
-
-- 📘 **About Page**
-  - Project description
-  - Learning goals
-  - Future improvement plans
+**Quick preview:** Open [index.html](index.html) in a browser to start at the login page.
 
 ---
 
-## 🎯 Learning Objectives
-
-This project was built to practice:
-
-- Semantic HTML structure
-- CSS styling and layout design
-- Multi-page navigation linking
-- Consistent UI design across pages
-- Basic front-end project structuring
+**What this project shows**
+- **Multi-page structure:** separate HTML pages for Home, About, Contact, QR code, and Password generator.
+- **Responsive-first CSS:** modular styles under the `css/` folder.
+- **Small JS utilities:** generators implemented in `js/` (UI + basic logic).
 
 ---
 
-## 🚀 Future Improvements
-
-Planned enhancements include:
-
-- JavaScript functionality for:
-  - Fully working password generator
-  - Functional QR code generator
-- Form validation
-- Improved mobile responsiveness
-- Backend integration for authentication
-- Enhanced UI/UX design
+**Files of interest**
+- **Home / entry:** [index.html](index.html)
+- **Pages:** [html/home.html](html/home.html), [html/about.html](html/about.html), [html/contact.html](html/contact.html)
+- **Generators:** [html/qrcode.html](html/qrcode.html), [html/password.html](html/password.html)
+- **Styles:** [css/home.css](css/home.css), [css/about.css](css/about.css), [css/contact.css](css/contact.css), [css/qrcode.css](css/qrcode.css), [css/password.css](css/password.css)
+- **Scripts:** [js/qrcode.js](js/qrcode.js), [js/password.js](js/password.js)
 
 ---
 
-## 🛠️ Technologies Used
+**Local preview / development**
+- Open the site directly: double-click `index.html` or open it from your browser.
+- Or serve with a lightweight HTTP server (recommended for relative paths):
 
-- HTML5
-- CSS3
-- Javascript
+```bash
+# From project root
+python -m http.server 8000
+# then open http://localhost:8000/
+```
+
+**Edit → Test**
+- Modify HTML under `html/` or styles under `css/`, then refresh the browser.
+- JavaScript lives in `js/`; changes load on refresh.
 
 ---
 
-## 📂 Project Structure
+**Project structure**
 
 ```
-webpage1/
-│
-├── index.html      # Login Page
-├── home.html       # Home Page
-├── about.html      # About Page
-├── contact.html    # Contact Page
-├── qrcode.html     # QR Code Generator Page (UI)
-└── password.html   # Password Generator Page (UI)
+Web1/
+├─ index.html
+├─ README.md
+├─ requirement.txt
+├─ style.css
+├─ css/
+│  ├─ about.css
+│  ├─ contact.css
+│  ├─ home.css
+│  ├─ password.css
+│  └─ qrcode.css
+├─ html/
+│  ├─ about.html
+│  ├─ contact.html
+│  ├─ home.html
+│  ├─ password.html
+│  └─ qrcode.html
+└─ js/
+   ├─ password.js
+   └─ qrcode.js
 ```
----
-
-## 👨‍💻 Author
-
-**Midhun Manesh**  
-Student | B.Tech Computer Science (AI & ML)  
-College of Engineering,Chengannur  
 
 ---
 
-## 📌 Note
+**Contributing / Next steps**
+- Add form validation and accessibility improvements.
+- Make the QR generator produce downloadable images (client-side).
+- Improve password options (length, character sets) and copy-to-clipboard UX.
+- Add automated linting / formatting for CSS/JS.
 
-This project focuses on front-end fundamentals and serves as a foundational web development exercise.
+---
+
+**Author**: Midhun Manesh
+
+---
+
+**Contact**
+
+- **College:** College of Engineering, Chengannur
+- **Email:** midhunmanesh01@gmail.com
+- **Phone:** 8590392681
+
+
