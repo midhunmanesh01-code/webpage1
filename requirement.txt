@@ -36,3 +36,13 @@ A web application project with the following deliverables.
 - Development: January 15, 2026
 - Testing: Under Progress
 - Deployment: February 9,2026
+
+## Suggested Python packages (optional)
+If you want a minimal Python backend (for the notify form or simple API), add these to a pip-style requirements file or install with pip:
+
+- Flask==2.3.2
+- python-dotenv==1.0.0
+- Flask-Mail==0.9.1
+- requests==2.31.0
+
+Note: On Windows you can run a quick dev server with `flask run` after installing Flask and setting `FLASK_APP`.

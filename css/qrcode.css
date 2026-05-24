@@ -22,12 +22,18 @@ body {
     box-shadow: 0 8px 30px rgba(0,0,0,0.45);
     text-align: center;
     border: 7px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
   
 }
 .container h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #f0ecec;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-decoration: dashed underline #e5e4e7;
 }
 .container input {
     padding: 10px;
@@ -35,17 +41,41 @@ body {
     border: none;
     border-radius: 5px;
     margin-bottom: 20px;
+    position: relative;
+    border-radius: 10px;
 }
 .container button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     background-color: #1d053d;
-    color: #f0ecec;
+    
     cursor: pointer;
     font-size: 1rem;
     border-radius: 10px;
 }
+
+  .qr-result {
+    display: none;
+    margin-top: 8px;
+    padding: 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .qr-result.is-visible {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .qr-label {
+    color: #f0ecec;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+  }
 .container button:hover {
     background-color: #033a74;
 }
@@ -133,4 +163,11 @@ button:hover
 }
 .home button:hover {
     background-color: #042852;
+}
+
+/* Make sure the QR code has a solid white background and quiet zone */
+#qrcode {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
 }

@@ -8,9 +8,14 @@
 </head>
 <body>
     <div class="container">
-    <h1>Enter text or url to generate QR code:</h1>
-    <input type="text" placeholder="Enter Text / URL" id="text">
-    <button onclick="generateQR()">Generate QR Code</button>
+        <h1>Enter text or URL to generate QR code</h1>
+        <input type="text" placeholder="Enter text / URL" id="text">
+        <button onclick="generateQR()">Generate QR Code</button>
+
+        <div class="qr-result" id="qr-result" aria-live="polite">
+            <p class="qr-label">Generated QR Code</p>
+            <div id="qrcode"></div>
+        </div>
     </div>
     <div class="navbar">
         <button onclick="document.getElementById('menu').hidden ^= 1">☰</button>
@@ -26,6 +31,7 @@
     <footer class="about-footer">
             <p>Created with <span class="heart">♥</span> by Midhun Manesh</p>
         </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script src="../js/qrcode.js"></script>
 </body>
 </html>
