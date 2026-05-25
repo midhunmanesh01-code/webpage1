@@ -10,6 +10,25 @@
     <script>
        alert("Click submit to enter the homepage!.");
     </script>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            let valid = true;
+
+            if (username === "") {
+                alert("Username must be filled out");
+                valid = false;
+            }
+
+            if (!/^(?=.*[A-Z])(?=.*\d).{6,}$/.test(password)) {
+                alert("Password must be at least 6 characters long and contain at least one uppercase letter and one number");
+                valid = false;
+            }
+
+            return valid;
+        }
+    </script>
     <div class="navbar">
         <button onclick="document.getElementById('menu').hidden ^= 1">☰</button>
         <ul id="menu" hidden>
@@ -19,13 +38,14 @@
         </ul>
     </div>
     <div class="login">
-        <form>
+        <form action="html/home.html" onsubmit="return validateForm()">
             <h1>Login</h1>
              <label>Username:</label>
-            <input type="text" placeholder="Enter username">
+            <input type="text" id="username" placeholder="Enter username">
             <label>Password:</label>
-            <input type="password" placeholder="Enter password">
-           <button type="button" onclick="window.location.href='html/home.html'">Submit</button>
+            <input type="password" id="password" placeholder="Enter password">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="window.location.href='html/home.html'">Go to Homepage</button>
 
         </form>        
     </div>
